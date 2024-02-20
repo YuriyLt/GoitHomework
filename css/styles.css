@@ -1,0 +1,96 @@
+/* root for index.html */
+
+:root {
+    --primary-text-color: #000000;
+    --secondary-text-color: #212121;
+    --body-text-color: #757575;
+    --title-text-color: #FFFFFF;
+    --accent-color: #2196F3; 
+    }
+.list {
+    list-style: none;
+}
+.font {
+    font-family: Roboto;
+}
+
+/* header css */
+body {
+    background-color: #FFFFFF;
+    color: var(--body-text-color)
+    /* add font Roboto */
+}
+.page-header {
+    color: #212121; 
+}
+.page-header :hover :focus {
+    color: var(--accent-color)
+}
+.page-header :visited {
+    color: var(--accent-color)
+}       
+.page-logo-w {
+    color: #2196F3;
+    font-family: Raleway;   
+} 
+.page-logo-s {
+    color: #000000;
+    font-family: Oleo Script;
+}
+.site-nav {
+    color: var(--secondary-text-color);
+}
+.link-active {
+    color: var(--accent-color);
+}
+.page-email :visited {
+    color: var(--accent-color);
+}
+.page-contacts {
+    color: var(--body-text-color);
+}
+.hero {
+    color: #FFFFFF;
+    background-color: #2F303A;
+}
+.hero-button {
+    color: var(--title-text-color);
+    background-color: var(--accent-color);
+}
+.hero-button :visited {
+    color: #FFFFFF;
+}
+.info {
+    background-color: #FFFFFF;
+}
+.info-title {
+    color: var(--secondary-text-color);
+}
+.info-subtitle {
+    color: var(--body-text-color);
+}
+.about {
+    color: var(--secondary-text-color);
+}
+.team {
+    color: var(--secondary-text-color);
+    background-color: #F5F4FA;
+}
+.team-role {
+    color: var(--body-text-color);
+}
+.footer {
+    background-color: #2F303A;
+}
+.footer-logo-w {
+    color: var(--accent-color);
+}
+.footer-logo-s {
+    color: var(--title-text-color);
+}
+.footer-address {
+    color: var(--title-text-color)
+}
+.footer-contacts {
+    color: rgba(255, 255, 255, 0.6);
+}
