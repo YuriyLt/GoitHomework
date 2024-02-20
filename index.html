@@ -4,95 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
-    <header>
+<body class="font">
+    <header class="page-header"> 
         <nav>
-            <a href=""><img src="./images/WebStudio.svg" alt="webstudio logo"></a>
-            <ul>
-                <li><a href=""></a>студия</li>
-                <li><a href=""></a>портфолио</li>
-                <li><a href=""></a>контакты</li>
+            <a href="" class="page-logo">
+                <span class="page-logo-w">Web</span><span class="page-logo-s">Studio</span></a>
+            <ul class="site-nav list">
+                <li><a href="" class="link-active">студия</a></li>
+                <li><a href="" class="link">портфолио</a></li>
+                <li><a href="" class="link">контакты</a></li>
             </ul>  
-            <ul>
-                <li><a href=""><img src="./images/Hover.svg" alt="e-mail button"></a></li>
-                <li>+38 096 111 11 11</li>
+            <ul class="page-contacts list">
+                <li class="page-email"><a href="info@devstudio.com">info@devstudio.com</a></li>
+                <li class="page-phone">+38 096 111 11 11</li>      
             </ul>
         </nav>
     </header>
-    <section>
-        <h1>Эффективные решения для вашего бизнеса</h1>
-        <a href=""><img src="./images/Button.svg" alt="Заказать услугу"></a>
+    <section class="hero">
+        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+        <button type="button" class="hero-button">Заказать услугу</button>
     </section>
-    <section>
-        <ul>
+    <section class="info">
+        <ul class="list">
             <li>
-                <h3>Внимание к деталям</h3>
-                <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                <h3 class="info-title">Внимание к деталям</h3>
+                <p class="info-subtitle">Идейные соображения, а также начало повседневной работы по формированию позиции.
+                </p>
             </li>
             <li>
-                <h3>Пунктуальность</h3>
-                <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой. </p>
+                <h3 class="info-title">Пунктуальность</h3>
+                <p class="info-subtitle">Задача организации, в особенности же рамки и место обучения кадров влечет за собой. </p>
             </li>
             <li>
-                <h3>Планирование</h3>
-                <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                <h3 class="info-title">Планирование</h3>
+                <p class="info-subtitle">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
             <li>
-                <h3>Современные технологии</h3>
-                <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                <h3 class="info-title">Современные технологии</h3>
+                <p class="info-subtitle">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
         </ul>
     </section>
-    <section>
-        <h2>Чем мы занимаемся</h2>
-        <img src="./images/box1.svg" alt="hand typing on keyboard">
-        <img src="./images/box2.svg" alt="phone in hands"> 
-        <img src="./images/box3.svg" alt="tablet in hands">
+    <section class="about">
+        <h2 class="about-title">Чем мы занимаемся</h2>
+        <img class="about-image" src="./images/box1.svg" alt="hand typing on keyboard">
+        <img class="about-image" src="./images/box2.svg" alt="phone in hands"> 
+        <img class="about-image" src="./images/box3.svg" alt="tablet in hands">
     </section>
-    <section>
-        <h2>Наша команда</h2>
-            <ul>
+    <section class="team">
+        <h2 class="team-title">Наша команда</h2>
+            <ul class="list">
                 <li>
                     <article>
-                        <img src="./images/img.svg" alt="">
-                        <h3>Игорь Демьяненко</h3>
-                        <p>Product Designer</p>
+                        <img class="team-image" src="./images/img.svg" alt="">
+                        <h3 class="team-name">Игорь Демьяненко</h3>
+                        <p class="team-role">Product Designer</p>
                     </article>
                 </li>
                 <li>
                     <article>
-                        <img src="./images/img2.svg" alt="">
-                        <h3>Ольга Репина</h3>
-                        <p>Frontend Developer</p>
+                        <img class="team-image" src="./images/img2.svg" alt="">
+                        <h3 class="team-name">Ольга Репина</h3>
+                        <p class="team-role">Frontend Developer</p>
                     </article>
                 </li>
                 <li>
                     <article>
-                        <img src="./images/img3.svg" alt="">
-                        <h3>Николай Тарасов</h3>
-                        <p>Marketing</p>
+                        <img class="team-image" src="./images/img3.svg" alt="">
+                        <h3 class="team-name">Николай Тарасов</h3>
+                        <p class="team-role">Marketing</p>
                     </article>
                 </li>
                 <li>
                     <article>
-                        <img src="./images/img4.svg" alt="">
-                        <h3>Михаил Ермаков</h3>
-                        <p>UI Designer</p>
+                        <img class="team-image" src="./images/img4.svg" alt="">
+                        <h3 class="team-name">Михаил Ермаков</h3>
+                        <p class="team-role">UI Designer</p>
                      </article>
                 </li>
             </ul>
     </section>
-    <footer>
+    <footer class="footer">
         <nav>
-            <a href=""><img src="./images/WebStudio.svg" alt="logo"></a>
-            <address>
-                г. Киев, пр-т Леси Украинки, 26 <br>
-                <a href=""><img src="./images/Hover.svg" alt="e-mail button"></a> <br>
+            <a href="" class="footer-logo">
+                <span class="footer-logo-w">Web</span><span class="footer-logo-s">Studio</span></a>
+            <address class="footer-address">
+                г. Киев, пр-т Леси Украинки, 26</address>
+            <a class="footer-contacts"><a href="info@devstudio.com">info@devstudio.com</a></class=><br>
                 +38 099 111 11 11
-            </address>
         </nav>
     </footer>
-    
 </body> 
 </html>
