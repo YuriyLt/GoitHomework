@@ -1,3 +1,13 @@
+html {
+    box-sizing: border-box;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
 /* root for index.html */
 
 :root {
@@ -9,84 +19,273 @@
     }
 .list {
     list-style: none;
+    margin: 0;
 }
 .font {
     font-family: Roboto;
 }
 
 /* header css */
+
 body {
+   
+    margin: 0px;
+
     background-color: #FFFFFF;
-    color: var(--body-text-color)
-    /* add font Roboto */
+    color: var(--body-text-color);
+    text-transform: capitalize;
+    
 }
+
+button {
+    font-family: inherit;
+}
+
+/* page header */
+
 .page-header {
+ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+    height: 80px;
+
     color: #212121; 
+    text-decoration: none;
 }
+
 .page-header :hover :focus {
-    color: var(--accent-color)
+    color: var(--accent-color);
+    text-decoration: none;
+
 }
-.page-header :visited {
-    color: var(--accent-color)
-}       
+
+.page-header :visited :active {
+    color: var(--accent-color);
+    text-decoration: none;
+        
+}    
+
+.page-nav { 
+    
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+  
+}
+
+.page-logo {
+
+    display: inline-block;
+    width: 145px;
+    height: 31px;
+    margin-top: 24px;
+
+    text-decoration: none;
+}
 .page-logo-w {
+
+    
+
     color: #2196F3;
-    font-family: Raleway;   
+
+    font-family: Raleway; 
+    font-weight: 700;   
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.03;
+
+    
 } 
 .page-logo-s {
+
     color: #000000;
     font-family: Oleo Script;
 }
 .site-nav {
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 32px;
+    padding: 0px;
+
     color: var(--secondary-text-color);
+
 }
+
+.nav-list {
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-list:not(:last-child) {
+    
+    margin-right: 50px;
+}
+
+.link {
+    text-decoration: none;
+}
+
 .link-active {
     color: var(--accent-color);
+    text-decoration: none;
 }
+
+
+.page-contacts {
+
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-top: 32px;
+
+    color: var(--body-text-color);
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+.page-phone {
+     
+    margin-left: 50px;
+}
+
 .page-email :visited {
     color: var(--accent-color);
+    text-decoration: none;
 }
-.page-contacts {
-    color: var(--body-text-color);
+
+/* Page Hero */
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+    outline: 2px solid tomato;
 }
+
 .hero {
+
+    display: block;
+    height: auto;
+    margin: 0px;
+    text-align: center;
+
     color: #FFFFFF;
     background-color: #2F303A;
 }
 .hero-button {
+
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 120px;
+
     color: var(--title-text-color);
     background-color: var(--accent-color);
 }
 .hero-button :visited {
     color: #FFFFFF;
 }
+.hero-title {
+
+    margin: 0 auto;
+    width: 636px;
+
+    padding-top: 120px;
+    margin-right: auto;
+    margin-left: auto;
+    
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    
+}
+
+/* page info */
+
 .info {
+    margin-top: 70px;
     background-color: #FFFFFF;
 }
 .info-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    
     color: var(--secondary-text-color);
+    font-weight: 700;
+    font-style: 14px;
+    line-height: 1.17;
+    text-transform: uppercase;
 }
 .info-subtitle {
+
+    margin: 0;
+
     color: var(--body-text-color);
+    font-weight: 400;
+    font-style: 14px;
+    line-height: 1.72;
+    text-transform: none;
+
 }
+
+/* about company */
+
 .about {
+
+    margin-top: 70px;
+    margin-bottom: 70px;
     color: var(--secondary-text-color);
 }
+
+.about-title {
+
+    margin: 0;
+    margin-bottom: 30px;
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.667;
+
+}
+
+/* our team */
+
 .team {
     color: var(--secondary-text-color);
     background-color: #F5F4FA;
 }
+
+.team-title {
+    
+    padding-top: 70px;
+    margin: 0;
+    margin-bottom: 20px;
+
+    color: var(--secondary-text-color);
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.667;
+    
+
+}
+
 .team-role {
+
+    margin: 0;
+
     color: var(--body-text-color);
 }
+
+/* page footer */
+
 .footer {
     background-color: #2F303A;
-}
-.footer-logo-w {
-    color: var(--accent-color);
-}
-.footer-logo-s {
-    color: var(--title-text-color);
 }
 .footer-address {
     color: var(--title-text-color)
