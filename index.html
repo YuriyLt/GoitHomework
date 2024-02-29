@@ -11,20 +11,22 @@
 
 </head>
 <body class="font">
-    <header class="page-header"> 
-        <nav class="page-nav">
-            <a href="" class="page-logo">
-                <span class="page-logo-w">Web</span><span class="page-logo-s">Studio</span></a>
-            <ul class="site-nav list">
-                <li class="nav-list"><a href="" class="link-active">студия</a></li>
-                <li class="nav-list"><a href="" class="link">портфолио</a></li>
-                <li class="nav-list"><a href="" class="link">контакты</a></li>
-            </ul>  
-            <ul class="page-contacts list">
-                <li class="page-email"><a class="email-link" href="info@devstudio.com">info@devstudio.com</a></li>
-                <li class="page-phone">+38 096 111 11 11</li>      
-            </ul>
-        </nav>
+    <header class="header"> 
+        <div class="page-header">
+            <nav class="page-nav">
+                <a href="" class="page-logo">
+                <span class="page-logo-w">Web</span><span class="page-logo-s"><b>Studio</b></span></a>
+                <ul class="site-nav list">
+                    <li class="nav-list"><a href="" class="link-active">студия</a></li>
+                    <li class="nav-list"><a href="" class="link">портфолио</a></li>
+                    <li class="nav-list"><a href="" class="link">контакты</a></li>
+                </ul>  
+                <ul class="page-contacts list">
+                    <li class="item email"><a class="email-link" href="info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="item phone">+38 096 111 11 11</li>      
+                </ul>
+            </nav>   
+        </div>
     </header>
         <section class="hero">
             <div class="container"> 
@@ -40,15 +42,15 @@
                     <p class="info-subtitle">Идейные соображения, а также начало повседневной работы по формированию позиции.
                     </p>
                 </li>
-                <li>
+                <li class="task">
                     <h3 class="info-title">Пунктуальность</h3>
                     <p class="info-subtitle">Задача организации, в особенности же рамки и место обучения кадров влечет за собой. </p>
                 </li>
-                <li>
+                <li class="task">
                     <h3 class="info-title">Планирование</h3>
                     <p class="info-subtitle">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
-                <li>
+                <li class="task">
                     <h3 class="info-title">Современные технологии</h3>
                     <p class="info-subtitle">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
@@ -62,42 +64,50 @@
             <img class="about-image" src="./images/box2.svg" alt="phone in hands"> 
             <img class="about-image" src="./images/box3.svg" alt="tablet in hands">  
         </div>
-    </section>
-    <section class="team">
-        <div class="container">
+    </section>    
+    <section class="team">    
+        <div class="container team-bg">   
             <h2 class="team-title">Наша команда</h2>
-            <ul class="list">
-                <li>
-                    <article>
-                        <img class="team-image" src="./images/img.svg" alt="">
-                        <h3 class="team-name">Игорь Демьяненко</h3>
-                        <p class="team-role">Product Designer</p>
-                    </article>
+            <ul class="team-people list">
+                <li class="cv-card">
+                    <div class="card">
+                        <article>                        
+                            <img class="team-image" src="./images/img.svg" alt="">
+                            <h3 class="team-name">Игорь Демьяненко</h3>
+                            <p class="team-role">Product Designer</p>                        
+                        </article>
+                    </div>                    
                 </li>
-                <li>
-                    <article>
-                        <img class="team-image" src="./images/img2.svg" alt="">
-                        <h3 class="team-name">Ольга Репина</h3>
-                        <p class="team-role">Frontend Developer</p>
-                    </article>
+                <li class="cv-card">
+                    <div class="card">
+                        <article>
+                            <img class="team-image" src="./images/img2.svg" alt="">
+                            <h3 class="team-name">Ольга Репина</h3>
+                            <p class="team-role">Frontend Developer</p>
+                        </article>
+                    </div>                   
                 </li>
-                <li>
-                    <article>
-                        <img class="team-image" src="./images/img3.svg" alt="">
-                        <h3 class="team-name">Николай Тарасов</h3>
-                        <p class="team-role">Marketing</p>
-                    </article>
+                <li class="cv-card">
+                    <div class="card">
+                        <article>
+                            <img class="team-image" src="./images/img3.svg" alt="">
+                            <h3 class="team-name">Николай Тарасов</h3>
+                            <p class="team-role">Marketing</p>
+                        </article>
+                    </div>                    
                 </li>
-                <li>
-                    <article>
-                        <img class="team-image" src="./images/img4.svg" alt="">
-                        <h3 class="team-name">Михаил Ермаков</h3>
-                        <p class="team-role">UI Designer</p>
-                     </article>
+                <li class="cv-card">
+                    <div class="card">
+                        <article>
+                            <img class="team-image" src="./images/img4.svg" alt="">
+                            <h3 class="team-name">Михаил Ермаков</h3>
+                            <p class="team-role">UI Designer</p>
+                        </article>
+                    </div>                    
                 </li>
-            </ul>
-        </div>
-    </section>
+            </ul>        
+        </div>   
+    </section> 
     <footer class="footer">
         <nav>
             <a href="" class="footer-logo">
