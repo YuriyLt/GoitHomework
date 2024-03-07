@@ -161,6 +161,28 @@ button {
     text-decoration: none;
 }
 
+.email::before {
+    
+    display: inline-flex;
+    content: "";
+    width: 16px;
+    height: 12px;
+    margin-right: 5px;
+    background-image: url(../images/envelope.svg);
+    background-repeat: no-repeat;
+}
+
+.phone::before {
+
+    display: inline-flex;
+    content: "";
+    width: 10px;
+    height: 16px;
+    margin-right: 5px;
+    background-image: url(../images/smartphone.svg);
+    background-repeat: no-repeat;
+}
+
 /* Page Hero */
 
 .container {
@@ -168,8 +190,7 @@ button {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    width: 1170px;
-    outline: 2px solid tomato;
+    width: 1170px;  
 }
 
 .hero {
@@ -180,7 +201,11 @@ button {
     text-align: center;
 
     color: #FFFFFF;
-    background-color: #2F303A;
+    background-color: rgba(47, 48, 58, 0.4);
+    background-image: url(../images/herophoto.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .hero-button {
 
@@ -188,13 +213,23 @@ button {
     height: 50px;
     margin-top: 20px;
     margin-bottom: 120px;
+    border-radius: 5px;    
 
     color: var(--title-text-color);
     background-color: var(--accent-color);
 }
+
+.hero-button:hover:focus {
+
+    background-color: var(--title-text-color);
+    cursor: pointer;
+    color: var(--primary-text-color);
+    
+}
 .hero-button :visited {
     color: #FFFFFF;
 }
+
 .hero-title {
 
     margin: 0 auto;
@@ -214,7 +249,9 @@ button {
 
 /* page info */
 
+
 .info {
+    height: 251px;
     margin-top: 70px;
     background-color: #FFFFFF;
 }
@@ -236,6 +273,59 @@ button {
     font-size: 14px;
     line-height: 1.17;
     text-transform: uppercase;
+}
+
+.details::before {
+
+    display: block;
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-image: url(../images/antenna\ 1.png);
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
+    
+}
+
+.time::before {
+
+    display: block;
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-image: url(../images/clock\ 1.png);
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.plan::before {
+
+    display: block;
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-image: url(../images/diagram\ 1.png);
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.tech::before {
+
+    display: block;
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-image: url(../images/astronaut\ 1.png);
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
 }
 
 .task {
@@ -274,7 +364,7 @@ button {
 }
 
 .about-title {
-
+    
     margin: 0;
     margin-bottom: 30px;
 
@@ -285,6 +375,11 @@ button {
     text-transform: none;
 
 }
+
+.about-image:not(:last-child) {
+    margin-right: 11px;
+}
+
 
 /* our team */
 
@@ -319,6 +414,8 @@ button {
     height: 368px;
     margin-right: 30px;
     padding: 0;
+    text-align: center;
+
 
 }
 
@@ -344,14 +441,145 @@ button {
     color: var(--body-text-color);
 }
 
+.clients-title {
+
+    padding-top: 70px;
+    margin: 0;
+    margin-bottom: 30px;
+
+    color: var(--secondary-text-color);
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.667;
+    text-transform: none;
+}
+
+.client-list {
+
+    display: flex;
+    margin-bottom: 70px;
+    padding: 0;
+
+}
+
+.client-logo:not(:last-child)  {
+
+    margin-right: 24px;
+}
+
+
+
 /* page footer */
 
 .footer {
+
     background-color: #2F303A;
 }
+
+.footer-section {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.footer-logo {
+
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer-list {
+    
+    padding: 0;
+}
+
+.contact-list:not(:last-child) {
+
+    margin-bottom: 10px;
+}
+
 .footer-address {
     color: var(--title-text-color)
 }
 .footer-contacts {
     color: rgba(255, 255, 255, 0.6);
+}
+
+.join-heading {
+
+    color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    text-transform: lowercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1721;
+    
+}
+
+.join {
+
+    margin-left: 40px;
+    width: 206px;
+    height: 80px;
+}
+
+.social {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.social-link {
+
+    display: block;
+    width: 44px;
+    height: 44px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;  
+
+}
+
+
+.instagram {
+
+    background-image: url(../images/instagram\ 2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.twitter {
+
+    background-image: url(../images/twitter\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.facebook {
+
+    background-image: url(../images/facebook\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.linkedin {
+
+    background-image: url(../images/linkedin\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
