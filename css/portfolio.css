@@ -2,3 +2,138 @@ html {
 
     box-sizing: border-box;
 }
+
+*,
+*::before,
+*::after {
+
+    box-sizing: inherit;
+}
+
+/* root for portfolio.html */
+
+:root {
+    --primary-text-color: #000000;
+    --secondary-text-color: #212121;
+    --body-text-color: #757575;
+    --title-text-color: #FFFFFF;
+    --accent-color: #2196F3; 
+    }
+
+/*  */
+
+.body {
+
+    font-family: Roboto;
+}
+
+.container {
+
+    margin-top: 60px;
+    padding: 0;
+    margin-bottom: 60px;
+}
+
+.nav-heading {
+    
+    display: flex;
+    flex-direction: row;
+
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    color: rgba(33, 33, 33, 1);
+
+}
+
+.navigation {
+
+    width: 611px;
+    padding: 0;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+/* .type {
+
+    padding: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+
+    background-color: #F5F4FA;
+    border-radius: 5px;
+    background-size: auto;
+}
+
+.type:hover:focus {
+
+    background-color: var(--accent-color);
+    color: var(--title-text-color);
+} */
+
+.button-menu {
+
+    padding: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+    background-color: #F5F4FA;
+    border-radius: 5px;
+    outline-color: #F5F4FA;
+    box-shadow: none;
+
+}
+
+.type:not(:last-child) {
+
+    margin-right: 5px;
+}
+
+.button-menu:hover:focus {
+
+    background-color: var(--accent-color);
+    color: var(--title-text-color);
+}
+
+h3,
+h4 {
+
+    width: 322px;
+}
+
+.products {
+
+    width: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    
+}
+
+.devs {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    
+
+}
+
+.products:nth-last-child(-n+3) {
+
+    margin-bottom: 0;
+}
+
+.products:nth-child(3n) {
+
+    margin: 0;
+}
+
+.portfolio {
+
+    box-shadow: inset;
+}
