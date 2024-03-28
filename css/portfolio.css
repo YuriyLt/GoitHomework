@@ -99,10 +99,19 @@ html {
     color: var(--title-text-color);
 }
 
+h3 {
+    color: #212121;
+}
+
 h3,
 h4 {
 
     width: 322px;
+}
+
+.info-head {
+
+    padding: 24px;
 }
 
 .products {
@@ -111,6 +120,17 @@ h4 {
     margin-right: 30px;
     margin-bottom: 30px;
     
+}
+
+.product {
+
+    border: 1px solid #EEEEEE;
+    width: 370px;
+}
+
+.product:hover {
+
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .devs {
