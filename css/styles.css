@@ -156,32 +156,28 @@ button {
     margin-left: 50px;
 }
 
-.email :visited {
+.email:hover {
+
+    fill: var(--accent-color);
     color: var(--accent-color);
     text-decoration: none;
 }
 
-.email::before {
-    
-    display: inline-flex;
-    content: "";
+.envelope {
+
     width: 16px;
     height: 12px;
-    margin-right: 5px;
-    background-image: url(../images/envelope.svg);
-    background-repeat: no-repeat;
+    fill: rgba(117, 117, 117, 1);
 }
 
-.phone::before {
+.cellphone {
 
-    display: inline-flex;
-    content: "";
     width: 10px;
     height: 16px;
-    margin-right: 5px;
-    background-image: url(../images/smartphone.svg);
-    background-repeat: no-repeat;
+    fill: rgba(117, 117, 117, 1);
 }
+
+
 
 /* Page Hero */
 
@@ -376,10 +372,57 @@ button {
 
 }
 
-.about-image:not(:last-child) {
+.box {
+
+    position: relative;
+
+    display: inline-block;
+    
+    width: 370px;
+    height: 294px;
+    
+}
+
+.box:not(:last-child) {
     margin-right: 11px;
 }
 
+.overlay {
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 370px;
+    height: 70px;
+
+    background-color: rgba(47, 48, 58, 0.8);
+
+    opacity: 0;
+
+    }
+
+.box:hover .overlay {
+
+    opacity: 1;
+    transition: 350ms;
+
+}
+
+.overlay > h3 {
+
+    text-align: center;
+
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.172;
+}
 
 /* our team */
 
@@ -470,7 +513,7 @@ button {
 }
 
 
-.media-icon:hover {
+.soc-media > li:hover .media-icon {
 
     fill: rgba(255, 255, 255, 1);
 }
@@ -528,6 +571,22 @@ button {
     margin-bottom: 70px;
     padding: 0;
 
+} 
+
+.logo-svg {
+
+    fill: rgba(175, 177, 184, 1);
+
+    width: 170px;
+    height: 92px;
+    border: 1px solid rgba(175, 177, 184, 1);
+    border-radius: 5%; 
+}
+
+.logo-svg:hover {
+
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
 }
 
 .client-logo:not(:last-child)  {

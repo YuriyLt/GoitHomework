@@ -22,8 +22,22 @@
                     <li class="nav-list"><a href="" class="link">контакты</a></li>
                 </ul>  
                 <ul class="page-contacts list">
-                    <li class="item email"><a class="email-link" href="info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="item phone">+38 096 111 11 11</li>      
+                    <li class="item">
+                        <div class="email">
+                            <svg class="envelope">
+                                <use href="./images/symbol-defs.svg#icon-envelope-hover-1"></use>
+                            </svg>
+                            <a class="email-link" href="info@devstudio.com">info@devstudio.com</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="phone-numb">
+                            <svg class="cellphone">
+                                <use href="./images/symbol-defs.svg#icon-smartphone-1"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </div>
+                    </li>      
                 </ul>
             </nav>   
         </div>
@@ -60,9 +74,25 @@
     <section class="about">
         <div class="container">
             <h2 class="about-title">Чем мы занимаемся</h2>
-            <img class="about-image" src="./images/box1.svg" alt="hand typing on keyboard">
-            <img class="about-image" src="./images/box2.svg" alt="phone in hands"> 
-            <img class="about-image" src="./images/box3.svg" alt="tablet in hands">  
+            <div class="box">
+                <img class="about-image" src="./images/box1.svg" alt="hand typing on keyboard">
+                <div class="overlay">
+                    <h3>Десктопные приложения</h3>
+                </div>
+            </div>
+            
+            <div class="box">
+                <img class="about-image" src="./images/box2.svg" alt="phone in hands">
+                <div class="overlay">
+                    <h3>Мобильные приложения</h3>
+                </div>
+            </div> 
+            <div class="box">
+                <img class="about-image" src="./images/box3.svg" alt="tablet in hands">
+                <div class="overlay">
+                    <h3>Дизайнерские решения</h3>
+                </div>
+            </div>  
         </div>
     </section>    
     <section class="team">    
@@ -267,32 +297,44 @@
             <ul class="list client-list">
                 <li class="client-logo">
                     <a href="">
-                        <img src="./images/Client 1.png" alt="YA & CO">
+                        <svg class="logo-svg">
+                            <use href="./images/symbol-defs.svg#icon-Client-1-1"></use>
+                        </svg>
                     </a>
                 </li>
                 <li class="client-logo">
                     <a href="">
-                        <img src="./images/Client 2.png" alt="Tagline">
+                        <svg class="logo-svg">
+                            <use href="./images/symbol-defs-2.svg#icon-Logo-1-1"></use>
+                        </svg>
                     </a>
                 </li>
                 <li class="client-logo">
                     <a href="">
-                        <img src="./images/Client 3.png" alt="company">
+                        <svg class="logo-svg">
+                            <use href="./images/symbol-defs.svg#icon-Client-3-1"></use>
+                        </svg> 
                     </a>
                 </li>
                 <li class="client-logo">
                     <a href="">
-                        <img src="./images/Client 4.png" alt="foster pieters">
+                        <svg class="logo-svg">
+                            <use href="./images/symbol-defs.svg#icon-Client-4-1"></use>
+                        </svg>  
                     </a>
                 </li>
                 <li class="client-logo">
                     <a href="">
-                        <img src="./images/Client 5.png" alt="Brand">           
+                        <svg class="logo-svg">
+                            <use href="./images/symbol-defs.svg#icon-Client-5-1"></use>
+                        </svg>             
                     </a>
                 </li>
                 <li class="client-logo">
                     <a href="">
-                        <img src="./images/Client 6.png" alt="CMPTG">
+                        <svg class="logo-svg">
+                            <use href="./images/symbol-defs.svg#icon-Client-6-1"></use>
+                        </svg>   
                     </a>
                 </li>
             </ul>

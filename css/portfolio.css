@@ -82,7 +82,8 @@ html {
     padding-top: 5px;
 
     background-color: #F5F4FA;
-    border-radius: 5px;
+    border: none;
+    border-radius: 4px;
     outline-color: #F5F4FA;
     box-shadow: none;
 
@@ -93,7 +94,7 @@ html {
     margin-right: 5px;
 }
 
-.button-menu:hover:focus {
+.button-menu:hover {
 
     background-color: var(--accent-color);
     color: var(--title-text-color);
@@ -131,6 +132,7 @@ h4 {
 .product:hover {
 
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: 350ms;
 }
 
 .devs {
@@ -140,7 +142,6 @@ h4 {
     flex-wrap: wrap;
     padding: 0;
     
-
 }
 
 .products:nth-last-child(-n+3) {
@@ -156,4 +157,48 @@ h4 {
 .portfolio {
 
     box-shadow: inset;
+}
+
+.box-info {
+
+    width: 370px;
+    height: 294px;
+
+    position: relative;
+}
+
+.overlay-info {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 370px;
+    height: 294px;
+    background-color: rgba(33, 150, 243, 0.9);
+
+    opacity: 0;
+    
+}
+
+.product:hover .overlay-info {
+
+    opacity: 1;
+    transition: 350ms;
+}
+
+.overlay-info > span {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5556;
+    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    text-transform: none;
+    
 }
