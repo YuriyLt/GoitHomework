@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link
-         rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 
@@ -45,7 +44,31 @@
         <section class="hero">
             <div class="container"> 
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="hero-button">Заказать услугу</button>
+                <button data-modal-open type="button" class="hero-button">Заказать услугу</button>
+            </div>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <form class="form js-speaker-form">
+                        <h3 class="form_header">Оставьте свои данные, мы вам перезвоним</h3>
+                        <label class="form_setting form_name" for="name">Имя</label>
+                        <input type="text" name="name" id="name">
+                        <label class="form_setting form_phone" for="tel">Телефон</label>
+                        <input type="tel" name="tel" id="tel">
+                        <label class="form_setting form_mail" for="mail">Почта</label>
+                        <input type="email" name="mail" id="mail">
+                        <label class="form_setting form_comment"> Комментарий </label>
+                        <textarea name="Комментарий" rows="5"
+                        placeholder="Введите текст"></textarea>
+                        <input type="checkbox" name="rules" value="submit" id="submit">
+      <label class="form_checkbox" for="submit">Соглашаюсь с рассылкой и принимаю <a class="form_rules" href="">Условия договора</a></label>
+                        <button class="form_submit" type="submit">
+                            Отправить
+                        </button>
+                    </form>
+                    <button data-modal-close class="close-modal" type="button">
+                        <img src="./images/Vector (1).svg" alt="">
+                    </button>
+                </div>
             </div>
         </section> 
     <section class="info">
@@ -386,5 +409,6 @@
             </div>              
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body> 
 </html>
